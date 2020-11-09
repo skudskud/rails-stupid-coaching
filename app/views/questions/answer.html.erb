@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/stylesheets/questions.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<h1>Stupid Coaching</h1>
+
+<div class="block_question">
+<div class="question">
+<p id="question"><%= params[:answer] %></p>
+<p class="you">-You</p>
+</div>
+</div>
+<br> <br>
+<div class="block_answer">
+<div class="answer">
+<p id="answer"><%= @result %></p>
+<p class="you">-Your coach</p>
+</div>
+</div>
+
+
+<div class="link">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
+</body>
+
+
+</html>
+
+
+
